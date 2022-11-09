@@ -20,7 +20,10 @@ ul{
     list-style: none;
 }
 .footer{
-    background-color:#302923;
+    background-image: url(https://content.invisioncic.com/p289038/monthly_2020_02/Newman.thumb.jpg.7b9c63815001d8f440820ca6c2990f43.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 50px 0;
 }
 .footer-col{
