@@ -16,8 +16,7 @@ body {
 
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
-    background-color: rgb(110, 0, 0);
-    color: azure;
+    color: rgb(231, 0, 0);
     padding: 30px 30px;
     text-decoration: none;
     font-size: 20px;
@@ -73,7 +72,11 @@ body {
     }
 }
 
-
+.background-wedding{
+    display: grid;
+    
+    
+}
 .container1 {
     margin: 100px;
     min-height: 100vh;
