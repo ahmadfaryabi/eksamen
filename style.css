@@ -8,6 +8,7 @@ body {
 .menuBar {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+    top: 0;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
@@ -53,7 +54,7 @@ body {
 
 
 .container1 {
-    padding:0;
+    margin: 100px;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
