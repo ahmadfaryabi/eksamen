@@ -20,6 +20,12 @@ body {
     display: block;
     float: left;
 }
+
+.menuBar .on_active {
+    border-bottom: 1px solid #000;
+    font-weight: bolder;
+}
+
 .menuBar img {
     padding: 30px 30px;
     display: block;
