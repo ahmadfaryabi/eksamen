@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: blueviolet;
+    background-color: rgb(241, 239, 243);
     margin:0px;
 }
 
@@ -20,6 +20,12 @@ body {
     display: block;
     float: left;
 }
+
+.menuBar .on_active {
+    border-bottom: 1px solid #000;
+    font-weight: bolder;
+}
+
 .menuBar img {
     padding: 30px 30px;
     display: block;
@@ -28,6 +34,14 @@ body {
     height: 30px;
 }
 
-.container {
-    
+.container1 {
+    padding:0;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
