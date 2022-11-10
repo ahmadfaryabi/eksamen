@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@600&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu+Condensed&display=swap');
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(241, 239, 243);
     margin:0px;
 }
-
 
 .menuBar {
     background-color: rgb(255, 255, 255);
@@ -13,6 +13,19 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+
+.menuBar .logo{
+    font-family: 'Audiowide', cursive;
+    background-color: rgb(110, 0, 0);
+    color: azure;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
 .menuBar a {
     padding: 30px 30px;
     color:black;
