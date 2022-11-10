@@ -25,6 +25,10 @@ body {
     float: left;
 }
 
+.menuBar .menu_icon {
+    display: none;
+}
+
 .menuBar .on_active {
     border-bottom: 1px solid #000;
     font-weight: bolder;
@@ -49,6 +53,10 @@ body {
     }
     .menuBar a {
         width: 100%;
+    }
+    .menuBar .menu_icon {
+        float: right;
+        display: block;
     }
 }
 
