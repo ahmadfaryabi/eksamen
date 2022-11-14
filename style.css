@@ -114,7 +114,7 @@ body {
 .container1 .card .face.face1{
     background-image: url(images/card-background.png);
     background-size: 300px;
-    border-radius: 40%;
+    border-radius: 10%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@ body {
 .container1 .card .face.face2{
     background-image: url(images/card-background3.jpg);
     background-size: 300px;
-    border-radius: 40%;
+    border-radius: 10%;
     position: relative;
     display: flex;
     align-items: center;
@@ -145,7 +145,7 @@ body {
 .container1 .card .face.face3{
     background-image: url(images/card-background2.jpg);
     background-size: 300px;
-    border-radius: 40%;
+    border-radius: 10%;
     position: relative;
     display: flex;
     align-items: center;
