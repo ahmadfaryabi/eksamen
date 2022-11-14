@@ -37,10 +37,22 @@ body {
     float: left;
     transition: all 0.3s ease ;
 }
-.menuBar a:hover:not(:first-child){
-    background-color: black;
-    color: red;
+.menuBar a::before{
+    content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
+.menuBar a:hover::before{
+    transform: scaleX(1);
+}
+
 
 .menuBar .menu_icon {
     display: none;
@@ -81,10 +93,12 @@ body {
     display:grid;
     background-image: url(wedding.jpg);
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center bottom;
     width: auto;
-    height: auto;
-    border: 2px solid;
+    min-height: 30rem;
+    height: 45rem; 
     
     
 }
