@@ -71,7 +71,7 @@ body {
     .menuBar a {
         width: 100%;
     }
-    .menuBar .menu_icon {
+    .menu_icon {
         float: right;
         display: block;
     }
