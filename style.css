@@ -12,11 +12,13 @@ body {
     position: sticky;
     width: 100%;
     box-sizing: border-box;
+    z-index: 2;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5)
 }
 
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
-    color: rgb(231, 0, 0);
+    color: rgb(97, 123, 139);
     padding: 30px 30px;
     text-decoration: none;
     font-size: 20px;
@@ -35,7 +37,10 @@ body {
     align-items: center;
     display: block;
     float: left;
+<<<<<<< HEAD
     transition: all 0.3s ease;
+=======
+>>>>>>> 99dbf9b56c9f76282c9cf1f36654bd85a1ddd250
 }
 .menuBar a::before{
   content: "";
@@ -71,7 +76,35 @@ body {
     height: 30px;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 800px) {
+=======
+.container {
+    
+}
+.background-wedding{
+    display:grid;
+    background-image: url(wedding.jpg);
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: auto;
+    min-height: 40rem;
+    z-index: 1;
+    
+}
+.backgroundImage-text{
+    background: rgb(187, 210, 197);
+    color: rgb(68, 86, 97);
+    margin: auto;
+    padding: 10px;
+    padding-left: 5em;
+}
+
+@media screen and (max-width: 1000px) {
+>>>>>>> 99dbf9b56c9f76282c9cf1f36654bd85a1ddd250
     /* removes the a links on the menu, whilst on mobile screen */
     .menuBar a:not(:first-child) {
         display: none;
@@ -82,30 +115,26 @@ body {
     .menuBar .menu_icon {
         display: block;
     }
+    .background-wedding{
+        min-height: 30rem;
+        background-position: center center ;
+    }
+    .backgroundImage-text{
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
-.background-wedding{
-    display:grid;
-    background-image: url(wedding.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    background-position: center bottom;
-    width: auto;
-    min-height: 30rem;
-    height: 45rem; 
-    
-    
-}
+
 .container1 {
     margin-top: 100px;
     min-height: 50vh;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    width: 1300px;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     top: 50%;
     left: 50%;
@@ -116,14 +145,14 @@ body {
     position: relative;
 }
 .container1 .card .face{
-    width:300px;
-    height: 200px;
+    width:400px;
+    height: 300px;
     transition:.5s;
   }
 .container1 .card .face.face1{
     background-image: url(images/card-background.png);
-    background-size: 300px;
-    border-radius: 10%;
+    background-size: 450px;
+    border-radius: 5%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -138,8 +167,8 @@ body {
 }
 .container1 .card .face.face2{
     background-image: url(images/card-background3.jpg);
-    background-size: 300px;
-    border-radius: 10%;
+    background-size: 450px;
+    border-radius: 5%;
     position: relative;
     display: flex;
     align-items: center;
@@ -153,8 +182,8 @@ body {
 }
 .container1 .card .face.face3{
     background-image: url(images/card-background2.jpg);
-    background-size: 300px;
-    border-radius: 10%;
+    background-size: 450px;
+    border-radius: 5%;
     position: relative;
     display: flex;
     align-items: center;
