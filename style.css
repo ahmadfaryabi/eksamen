@@ -37,10 +37,7 @@ body {
     align-items: center;
     display: block;
     float: left;
-<<<<<<< HEAD
     transition: all 0.3s ease;
-=======
->>>>>>> 99dbf9b56c9f76282c9cf1f36654bd85a1ddd250
 }
 .menuBar a::before{
   content: "";
@@ -76,11 +73,10 @@ body {
     height: 30px;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 800px) {
-=======
 .container {
     
+}
 }
 .background-wedding{
     display:grid;
@@ -104,7 +100,6 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
->>>>>>> 99dbf9b56c9f76282c9cf1f36654bd85a1ddd250
     /* removes the a links on the menu, whilst on mobile screen */
     .menuBar a:not(:first-child) {
         display: none;
