@@ -35,10 +35,10 @@ body {
     align-items: center;
     display: block;
     float: left;
-    transition: all 0.3s ease ;
+    transition: all 0.3s ease;
 }
 .menuBar a::before{
-    content: "";
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -53,9 +53,9 @@ body {
     transform: scaleX(1);
 }
 
-
 .menuBar .menu_icon {
-    display: none;
+    display: block;
+    float: right;
 }
 
 .menuBar .on_active {
@@ -71,11 +71,7 @@ body {
     height: 30px;
 }
 
-.container {
-    
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     /* removes the a links on the menu, whilst on mobile screen */
     .menuBar a:not(:first-child) {
         display: none;
@@ -83,8 +79,7 @@ body {
     .menuBar a {
         width: 100%;
     }
-    .menu_icon {
-        float: right;
+    .menuBar .menu_icon {
         display: block;
     }
 }
