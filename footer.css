@@ -13,9 +13,13 @@ body{
     margin: auto;
 }
 .row{
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
-
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 ul{
     list-style: none;
@@ -25,12 +29,11 @@ ul{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 70px 0;
+    padding: 120px 0 50px 0;
 }
 .footer-col{
-    width: 20%;
-    padding: 0 15px;
-    margin-right: 15px;
+    width: 25%;
+    margin-left: 50px;
 }
 
 .footer-col h4{ 
@@ -47,7 +50,7 @@ ul{
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color:#b44339 ;
+    background-color:#ffffff ;
     height:2px;
     width: 60px;
     box-sizing: border-box;
@@ -76,6 +79,9 @@ address{
 .footer-col ul li a:hover{
     color: #ffffff;
     /*padding-left: 5px;*/
+}
+.footer-col .social-links{
+    max-width: 130px;
 }
 .footer-col .social-links a{
     display:inline-block;
@@ -109,10 +115,12 @@ address{
     background-color: #ffffff;
 }
 
-@media(max-width: 767px){
+@media(max-width: 1200px){
     .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
+        width: 35%;
+    }
+    .footer-col .social-links{
+        max-width: 100%;
     }
 }
 @media(max-width: 574px){
@@ -139,8 +147,9 @@ h4{
     text-decoration: dashed;
 }
 .copyrights{
-    color: white;
+    color: rgb(122, 122, 122);
     background-color: black;
+    text-align: right;
     padding: 5px 5px 5px 5px;
     font-size: small;
 }
