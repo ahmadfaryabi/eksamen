@@ -113,7 +113,6 @@ body {
     background: rgb(181, 142, 212);
     color: rgb(85, 0, 78);
 }
-
 .row{
     max-width: 1000px;
     display: flex;
@@ -180,6 +179,8 @@ body {
     .paragraph{
         text-align: left;
     }
+}
+@media screen and (max-width: 670px){
     .textImage{   
         width: 100%;
         margin: 10px 0 10px 0;
@@ -188,21 +189,19 @@ body {
         width: 100%;
     }
 }
-
-.welcome-page{
-    margin: auto;
-    padding: 10px;
-    padding-left: 5em;
-}
-.welcome-page .border{
-    background: rgb(13, 45, 26);
+.backgroundImage-text.welcomePage{
+    background: rgb(182, 182, 182);
     color: rgb(68, 86, 97);
 }
 .Container{
-    height: 100vh;
+    height: 75vh;
+    max-width: 1500px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin: auto;
+    padding-top: 25px;
 }
 .card{
     box-sizing: border-box;
@@ -211,7 +210,8 @@ body {
     height: 420px;
     box-shadow: 0 5px 10px rgba(0, 0, 0,.2);   
     overflow: hidden;
-    border-radius: 5%;
+    border-radius: 20px;
+    margin: 10px;
 }
 #Wedding{
     background: url(Images/card-background.png)center / cover;
@@ -274,6 +274,7 @@ body {
     text-decoration: none;
     border: 2px solid #fff;
     color: #fff;
+    border-radius: 10px;
 }
 .card:hover .overlay{
     opacity: 1;
