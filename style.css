@@ -72,12 +72,6 @@ body {
     width: 60px;
     height: 30px;
 }
-
-@media screen and (max-width: 800px) {
-.container {
-    
-}
-}
 .background {
     display:grid;
     filter: brightness(50%);
