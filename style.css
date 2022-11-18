@@ -163,74 +163,98 @@ body {
         min-height: 26rem;
     }
 }
-
-
-.container1 {
-    margin-top: 100px;
-    min-height: 50vh;
-    justify-content: center;
-    align-items: center;
-    width: 1300px;
-    position: relative;
+.welcome-page{
+    margin: auto;
+    padding: 10px;
+    padding-left: 5em;
+}
+.welcome-page .border{
+    background: rgb(13, 45, 26);
+    color: rgb(68, 86, 97);
+}
+.Container{
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-10%);
 }
-
-.container1 .card{
-    position: relative;
-}
-.container1 .card .face{
-    width:400px;
-    height: 300px;
-    transition:.5s;
-  }
-.container1 .card .face.face1{
-    background-image: url(images/card-background.png);
-    background-size: 450px;
-    border-radius: 5%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
+.card{
     box-sizing: border-box;
+    position: relative;
+    width: 300px;
+    height: 420px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.2);   
+    overflow: hidden;
+    border-radius: 5%;
 }
-.container1 .card:hover .face.face1{
+#Wedding{
+    background: url(Images/card-background.png)center / cover;
+}
+#Restaurant{
+    background: url(Images/card-background3.jpg)center / cover;
+}
+#Party{
+    background: url(Images/card-background2.jpg)center / cover;
+}
+#Gaming{
+    background: url(Images/card-background4.jpg)center / cover;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.5);
+    color: #fff;
+    transition: .7s;
+    opacity: 0;
+    border-radius: 5%;
+}
+.content{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 170px;
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Poppins',sans-serif;
+    transform: translateY(200px);
+    transition: .3s;
+}
+.name{
+    position: relative;
+    padding: 3px 0;
+}
+.name::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .4s;
+    transition-delay: .5s;
+}
+.content p{
+    font-size: 13px;
+}
+.content a{
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover .content{
     transform: translateY(0);
 }
-.container1 .card .face.face2{
-    background-image: url(images/card-background3.jpg);
-    background-size: 450px;
-    border-radius: 5%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    transform: translateY(100px);
-}
-.container1 .card:hover .face.face2{
-    transform: translateY(0);
-}
-.container1 .card .face.face3{
-    background-image: url(images/card-background2.jpg);
-    background-size: 450px;
-    border-radius: 5%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    transform: translateY(100px);
-}
-.container1 .card:hover .face.face3{
-    transform: translateY(0);
+.card:hover .name::after{
+    width: 100%;
 }
