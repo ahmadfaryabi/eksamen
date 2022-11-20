@@ -183,19 +183,26 @@ body {
     padding-top: 25px;
 }
 .menu{
-    
+    min-width: 350px;
     justify-content: center;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 .menuCard{
+    display: flex;
+    flex-wrap: wrap;
     width: 450px;
     height: 240px;
     border: 2px solid black;
     box-shadow: 0 5px 10px rgba(0, 0, 0,.2);  
     margin: 10px;
     
+}
+.card-image{
+}
+.card-content{
+
 }
 .card{
     box-sizing: border-box;
