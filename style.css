@@ -114,17 +114,7 @@ body {
     background: rgb(199, 96, 65);
     color: darkred;
 }
-.header{
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 2px solid black;
-    font-size: 40px;
-    font-family: 'Ubuntu', sans-serif;
-}
-.row .header img{
-    max-width: 40px;
-    max-height: 40px;
-}
+
 .row{
     max-width: 1000px;
     display: flex;
@@ -161,46 +151,23 @@ body {
     float:left;
     padding: 0 25px 10px 0;
 }
-
-
-@media screen and (max-width: 1000px) {
-    /* removes the a links on the menu, whilst on mobile screen */
-    .menuBar a:not(:first-child) {
-        display: none;
-    }
-    .menuBar a {
-        width: 100%;
-    }
-    .menuBar .menu_icon {
-        display: block;
-    }
-    .background-wedding{
-        min-height: 30rem;
-        background-position: center center ;
-    }
-    .backgroundImage-text{
-        padding-left: 0;
-        text-align: center;
-    }
+.header{
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid black;
+    font-size: 40px;
+    line-height: 2;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.header img{
+    max-width: 40px;
+    max-height: 40px;
 }
 
-@media screen and (max-height: 720px) {
-    .background{
-        min-height: 26rem;
-    }
-    .paragraph{
-        text-align: left;
-    }
-}
-@media screen and (max-width: 670px){
-    .textImage{   
-        width: 100%;
-        margin: 10px 0 10px 0;
-    }
-    iframe{
-        width: 100%;
-    }
-}
+
+
 .backgroundImage-text.welcomePage{
     background: rgb(182, 182, 182);
     color: rgb(68, 86, 97);
@@ -214,6 +181,21 @@ body {
     justify-content: space-around;
     margin: auto;
     padding-top: 25px;
+}
+.menu{
+    min-width: 350px;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menuCard{
+    width: 450px;
+    height: 240px;
+    border: 2px solid black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.2);  
+    margin: 10px;
+    
 }
 .card{
     box-sizing: border-box;
@@ -296,4 +278,49 @@ body {
 }
 .card:hover .name::after{
     width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    /* removes the a links on the menu, whilst on mobile screen */
+    .menuBar a:not(:first-child) {
+        display: none;
+    }
+    .menuBar a {
+        width: 100%;
+    }
+    .menuBar .menu_icon {
+        display: block;
+    }
+    .background-wedding{
+        min-height: 30rem;
+        background-position: center center ;
+    }
+    .backgroundImage-text{
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 720px) {
+    .background{
+        min-height: 26rem;
+    }
+    .paragraph{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .textImage{   
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+    iframe{
+        width: 100%;
+    }
+    .menuCard{
+        width: 100%;
+        height: 250px;
+    }
+    
 }
