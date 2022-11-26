@@ -74,7 +74,7 @@ body {
 }
 .background {
     display:grid;
-    filter: brightness(50%);
+    
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
@@ -84,16 +84,32 @@ body {
     z-index: 1;
     
 }
+.background.welcomeText{
+    font-size: 5rem;
+	font-weight: 700;
+    text-align: center;
+    align-items: center;
+	background-image: url(Images/welcomePage.jpeg);
+    filter: brightness(50%);
+}
+.background.welcomeText p{
+    color: white;
+    margin: auto;
+    background-color: rgba(255,255,255,.3);
+}
 .background.wedding{
     background-image: url(Images/wedding.jpg);
+    filter: brightness(50%);
 }
 
 .background.party{
     background-image: url(Images/party.jpg);
+    filter: brightness(50%);
 }
 
 .background.cafe{
     background-image: url(Images/cafe.jpg);
+    filter: brightness(50%);
 }
 .backgroundImage-text{
     margin: auto;
@@ -166,15 +182,14 @@ body {
     max-height: 40px;
 }
 
-
-
 .backgroundImage-text.welcomePage{
-    background: rgb(182, 182, 182);
+    text-align: center;
     color: rgb(68, 86, 97);
+    padding-right: 5em;
+    
 }
 .Container{
-    height: 75vh;
-    max-width: 1500px;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -228,8 +243,8 @@ body {
 .card{
     box-sizing: border-box;
     position: relative;
-    width: 300px;
-    height: 420px;
+    width: 280px;
+    height: 400px;
     box-shadow: 0 5px 10px rgba(0, 0, 0,.2);   
     overflow: hidden;
     border-radius: 20px;
@@ -327,6 +342,10 @@ body {
         padding-left: 0;
         text-align: center;
     }
+    .backgroundImage-text.welcomePage{
+        padding-right: 5em;
+        padding-left: 5em;
+    }
 }
 
 @media screen and (max-height: 720px) {
@@ -354,12 +373,14 @@ body {
         height: 16.5%;
     }
     .card-image img{
-        width: 46%;
-        margin: auto;
+        width: 100%;
         border: none;
     }
     .card-content{
         font-size: 18px;
+    }
+    .welcomeText{
+        font-size: 3rem;
     }
 }
 @media screen and (min-width:671px) and (max-width: 1007px){
