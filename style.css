@@ -17,21 +17,21 @@ body {
 
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
-    color: rgb(97, 123, 139);
-    padding: 25px 25px;
+    color: rgb(42, 107, 148);
+    padding: 20px 20px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     display: block;
     float: left;
 }
 
 .menuBar a {
-    padding: 25px 25px;
+    padding: 20px 20px;
     color:black;
     text-decoration: none;
     font-family: 'Bree Serif', serif;
-    font-size: 17px;
+    font-size: 16px;
     text-align: center;
     box-sizing: border-box;
     align-items: center;
@@ -208,13 +208,12 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .menuCard{
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    width: 22%;
-    height: 400px;   
+    width: 22%;   
     border: 1px dashed black;
     border-radius: 15px;
     background: white;
@@ -237,6 +236,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    align-items: flex-start;
     font-family: 'Ubuntu', sans-serif;
     font-size: .9rem; 
 
@@ -376,7 +376,7 @@ body {
         font-size: 28px;
     }
     .menuCard{
-        width: 100%;
+        width: 43%;
         height: 16.5%;
     }
     .card-image img{
@@ -384,7 +384,7 @@ body {
         border: none;
     }
     .card-content{
-        font-size: 18px;
+        font-size: 12px;
     }
     .background-welcomeText p{
         font-size:2rem ;
