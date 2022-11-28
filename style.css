@@ -55,7 +55,7 @@ body {
 }
 
 .menuBar .menu_icon {
-    display: block;
+    display: none;
     float: right;
 }
 
@@ -332,7 +332,7 @@ body {
 
 @media screen and (max-width: 1000px) {
     /* removes the a links on the menu, whilst on mobile screen */
-    .menuBar a:not(:first-child) {
+    .menuBar .button {
         display: none;
     }
     .menuBar a {
@@ -340,6 +340,7 @@ body {
     }
     .menuBar .menu_icon {
         display: block;
+        float: right;
     }
     .background-wedding{
         min-height: 30rem;
