@@ -11,7 +11,6 @@ body {
     top: 0;
     position: sticky;
     width: 100%;
-    box-sizing: border-box;
     z-index: 2;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5)
 }
@@ -19,20 +18,20 @@ body {
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
     color: rgb(97, 123, 139);
-    padding: 30px 30px;
+    padding: 25px 25px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     display: block;
     float: left;
 }
 
 .menuBar a {
-    padding: 30px 30px;
+    padding: 25px 25px;
     color:black;
     text-decoration: none;
     font-family: 'Bree Serif', serif;
-    font-size: 21px;
+    font-size: 17px;
     text-align: center;
     box-sizing: border-box;
     align-items: center;
@@ -83,6 +82,30 @@ body {
     min-height: 40rem;
     z-index: 1;
     
+}
+.background-welcomeText{
+    color: white;
+	background-image: url(Images/welcomePage.jpg);
+
+    display:grid;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 30rem;
+    z-index: 1;
+    
+}
+.background-welcomeText p{
+    font-size: 5rem;
+	font-weight: 700;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0;
+    margin-top: 400px;
+    background-color: rgba(255,255,255,.3);
+    backdrop-filter: blur(20px);
 }
 .background.wedding{
     background-image: url(Images/wedding.jpg);
@@ -156,7 +179,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-bottom: 2px solid black;
-    font-size: 40px;
+    font-size: 2em;
     line-height: 2;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
@@ -166,15 +189,14 @@ body {
     max-height: 40px;
 }
 
-
-
 .backgroundImage-text.welcomePage{
-    background: rgb(182, 182, 182);
+    text-align: center;
     color: rgb(68, 86, 97);
+    padding-right: 5em;
+    
 }
 .Container{
-    height: 75vh;
-    max-width: 1500px;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -183,8 +205,6 @@ body {
     padding-top: 25px;
 }
 .menu{
-    min-width: 350px;
-    justify-content: center;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -193,35 +213,48 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
-    height: 240px;
-    border: 2px solid black;
+    width: 22%;
+    height: 400px;   
+    border: 1px dashed black;
+    border-radius: 15px;
     background: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0,.2);  
     margin: 10px;
-    
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(104, 53, 38,0.5) 100%);
+    transition: 0.5s;
 }
-.card-image img{
-    width: 235px;
-    float: left;
+.menuCard:hover{
+    transform: scale(1.01);
+}
+.card-image img{   
+    border-radius: 15px;
+    width: 100%;
     align-items: center;
 }
 .card-content{
-    margin: auto;
+    max-width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 22px;
+    font-size: .9rem; 
 
-  
-    
+}
+.product{
+    color: white;
+    background-color: rgb(104, 53, 38);
+    border-radius: 10px;
+
 }
 .card{
     box-sizing: border-box;
     position: relative;
-    width: 300px;
-    height: 420px;
+    width: 280px;
+    height: 400px;
     box-shadow: 0 5px 10px rgba(0, 0, 0,.2);   
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 0px;
     margin: 10px;
 }
 #Wedding{
@@ -317,6 +350,10 @@ body {
         padding-left: 0;
         text-align: center;
     }
+    .backgroundImage-text.welcomePage{
+        padding-right: 5em;
+        padding-left: 5em;
+    }
 }
 
 @media screen and (max-height: 720px) {
@@ -336,17 +373,166 @@ body {
     iframe{
         width: 100%;
     }
+    .header{
+        font-size: 28px;
+    }
     .menuCard{
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 83%, rgba(199,96,65,0.5) 100%);
+        width: 100%;
+        height: 16.5%;
     }
     .card-image img{
         width: 100%;
         border: none;
     }
+    .card-content{
+        font-size: 18px;
+    }
+    .background-welcomeText p{
+        font-size:2rem ;
+        border-radius: 0;
+    }
 }
-@media screen and (max-width: 1007px){
+@media screen and (min-width:671px) and (max-width: 1007px){
     .menuCard{
-        width: 100%;
+        width: 46%;
         height: 16.5%;
     }
+}
+
+/*footer*/
+
+.container-footer{
+    max-width:1170px;
+    margin: auto;
+}
+.footer .row{
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer{
+    background-image: url("Images/Footer-background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0 50px 0;
+}
+.footer-col{
+    width: 25%;
+    margin-left: 50px;
+}
+
+.footer-col h4{ 
+    font-size: 18px;
+    color:#c0c0c0;
+    text-transform:capitalize ;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-weight: 600;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color:#ffffff ;
+    height:2px;
+    width: 60px;
+    box-sizing: border-box;
+}
+.footer iframe{
+    border: 2px solid #b44339;
+    border-radius: 10px;
+    
+}
+.footer address{
+    margin-top: 7px;
+    color: rgb(255, 255, 255);
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size : 16px;
+    text-transform: capitalize;
+    text-decoration : none; 
+    font-weight:300 ;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    /*padding-left: 5px;*/
+}
+.footer-col .social-links{
+    max-width: 130px;
+}
+.footer-col .social-links a{
+    display:inline-block;
+    font-size: 20px;
+    color: white;
+    height:50px ;
+    width: 50px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+    border-radius: 100%;
+
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover:first-child{
+    color: #1877f2;
+    background-color: #ffffff;
+}
+.footer-col .social-links a:hover:nth-child(2){
+    color: #1f88ff;
+    background-color: #ffffff;
+}
+.footer-col .social-links a:hover:nth-child(3){
+    color: #ff1f9a;
+    background-color: #ffffff;
+}
+.footer-col .social-links a:hover:nth-child(4){
+    color: #9700d3;
+    background-color: #ffffff;
+}
+
+@media(max-width: 1200px){
+    .footer-col{
+        width: 35%;
+    }
+    .footer-col .social-links{
+        max-width: 100%;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 1366px){
+    .footer-col{
+        margin-left: 25px;
+    }
+}
+
+.copyrights{
+    color: rgb(122, 122, 122);
+    background-color: black;
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+    font-size: small;
 }
