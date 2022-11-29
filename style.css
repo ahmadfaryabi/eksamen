@@ -277,7 +277,7 @@ body {
     color: #fff;
     transition: .7s;
     opacity: 0;
-    border-radius: 5%;
+    border-radius: 0%;
 }
 .content{
     position: absolute;
