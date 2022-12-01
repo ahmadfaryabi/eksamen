@@ -79,25 +79,56 @@ body {
     background-position: center center;
     background-attachment: fixed;
     width: auto;
-    min-height: 40rem;
+    min-height: 20rem;
     z-index: 1;
     
+}
+.background-welcome{
+    display: flex;
+    flex-wrap: wrap;
 }
 .background-welcomeText{
     font-size: 5rem;
 	font-weight: 700;
-    display:grid;
+    display: flex;
+    margin: auto;
+    padding: 20px;
     color: black;
-    height: 12rem;
+    min-height: 12rem;
     z-index: 1;
     align-content: center;
     justify-content: center;
     
 }
+#slider {
+     overflow: hidden; 
+     max-width: 400px;
+    }
+#slider figure img {
+     width: 20%; float: left; 
+    }
+#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
 .background-welcomeText span{
     font-family:'Audiowide', cursive;
-    -webkit-background-clip: text;
-    background-clip: text;
     color: #4074b5;
 }
 .background.wedding{
