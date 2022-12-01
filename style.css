@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bree+Serif&family=Outfit:wght@600&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu+Condensed&family=Ubuntu:wght@700&display=swap');
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  
     background-color: rgb(239, 239, 239);
     margin:0px;
 }
 
 .menuBar {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 39, 55);
     overflow: hidden;
     top: 0;
     position: sticky;
@@ -17,21 +17,21 @@ body {
 
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
-    color: rgb(97, 123, 139);
-    padding: 25px 25px;
+    color: rgb(145, 184, 208);
+    padding: 20px 20px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     display: block;
     float: left;
 }
 
 .menuBar a {
-    padding: 25px 25px;
-    color:black;
+    padding: 20px 20px;
+    color:rgb(229, 229, 229);
     text-decoration: none;
     font-family: 'Bree Serif', serif;
-    font-size: 17px;
+    font-size: 16px;
     text-align: center;
     box-sizing: border-box;
     align-items: center;
@@ -84,28 +84,21 @@ body {
     
 }
 .background-welcomeText{
-    color: white;
-	background-image: url(Images/welcomePage.jpg);
-
-    display:grid;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center top;
-    background-attachment: fixed;
-    min-height: 30rem;
-    z-index: 1;
-    
-}
-.background-welcomeText p{
     font-size: 5rem;
 	font-weight: 700;
-    text-align: center;
-    color: white;
-    padding: 20px;
-    margin-bottom: 0;
-    margin-top: 400px;
-    background-color: rgba(255,255,255,.3);
-    backdrop-filter: blur(20px);
+    display:grid;
+    color: black;
+    height: 12rem;
+    z-index: 1;
+    align-content: center;
+    justify-content: center;
+    
+}
+.background-welcomeText span{
+    font-family:'Audiowide', cursive;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #4074b5;
 }
 .background.wedding{
     background-image: url(Images/wedding.jpg);
@@ -208,13 +201,12 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .menuCard{
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    width: 22%;
-    height: 400px;   
+    width: 22%;   
     border: 1px dashed black;
     border-radius: 15px;
     background: white;
@@ -237,6 +229,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    align-items: flex-start;
     font-family: 'Ubuntu', sans-serif;
     font-size: .9rem; 
 
@@ -277,7 +270,7 @@ body {
     color: #fff;
     transition: .7s;
     opacity: 0;
-    border-radius: 5%;
+    border-radius: 0%;
 }
 .content{
     position: absolute;
@@ -377,7 +370,7 @@ body {
         font-size: 28px;
     }
     .menuCard{
-        width: 100%;
+        width: 43%;
         height: 16.5%;
     }
     .card-image img{
@@ -385,17 +378,19 @@ body {
         border: none;
     }
     .card-content{
-        font-size: 18px;
+        font-size: 12px;
     }
     .background-welcomeText p{
         font-size:2rem ;
-        border-radius: 0;
     }
 }
 @media screen and (min-width:671px) and (max-width: 1007px){
     .menuCard{
         width: 46%;
         height: 16.5%;
+    }
+    .background-welcomeText p{
+        font-size:3rem ;
     }
 }
 
@@ -461,6 +456,13 @@ body {
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
+.footer-col ul li{
+    font-size : 16px;
+    text-transform: capitalize;
+    font-weight:300 ;
+    color: #bbbbbb;
+    display: block;
+}
 .footer-col ul li a{
     font-size : 16px;
     text-transform: capitalize;
@@ -486,7 +488,6 @@ body {
     background-color: rgba(255,255,255,0.2);
     margin:0 10px 10px 0;
     text-align: center;
-    justify-content: center;
     line-height: 50px;
     border-radius: 100%;
 
@@ -520,7 +521,6 @@ body {
 @media(max-width: 574px){
     .footer-col{
         width: 100%;
-        margin-bottom: 30px;
     }
 }
 @media(max-width: 1366px){
