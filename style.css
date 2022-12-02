@@ -570,7 +570,7 @@ body {
     box-sizing: border-box;
 }
 .footer iframe{
-    border: 4px solid rgb(0, 77, 107);
+    border: 4px solid rgb(128, 128, 128);
     border-radius: 10px;
     
 }
