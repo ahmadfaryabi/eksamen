@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="booking">
-        <h1 id="logo">Paramount <span style="font-family: Arial; color: green;">Booking</span></h1>
+    <div class="booking" >
+        <h1 id="logo" >Paramount <span style="font-family: Arial; color: green;">Booking</span></h1>
 
-        <div class="w3-bar w3-black">
+        <div class="w3">
             <button id="bookingButton" onclick="openType('Wedding Booking')">Wedding</button>
             <button id="bookingButton" onclick="openType('Party Booking')">Party</button>
             <button id="bookingButton" onclick="openType('Restaurant Booking')">Restaurant Tables</button>
@@ -22,19 +22,21 @@
     
     <div class="bookingContent">
         <div id="Main" class="w3-container w3-display-container type">
-            <h2>Main</h2>
             <p>Please Pick a Topic.</p>
         </div>
         <div id="Wedding Booking" class="w3-container w3-display-container type" style="display:none">
+            <div class="first-part"></div>
             <h2>Wedding</h2>
             <div>
 
             </div>
         </div>
         <div id="Party Booking" class="w3-container w3-display-container type" style="display:none">
+            <div class="first-part"></div>
             <h2>Party</h2>
         </div>
         <div id="Restaurant Booking" class="w3-container w3-display-container type" style="display:none">
+            <div class="first-part"></div>
             <h2>Restaurant Tables</h2>
         </div>
     </div>  

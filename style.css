@@ -105,43 +105,12 @@ body {
     text-align: center;
     
 }
-#slider {
-     overflow: hidden; 
-     max-width: 400px;
-    }
-#slider figure img {
-     width: 20%; float: left; 
-    }
-#slider figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite; 
-}
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
 .background-welcomeText span{
     font-family:'Audiowide', cursive;
     color: #4074b5;
 }
 
 /*Booking Page*/
-.booking{
-    color: #000000; 
-    text-align: center;
-}
 #logo{
     font-family: 'Audiowide', cursive;
     color: rgb(17, 17, 17);
@@ -150,33 +119,46 @@ body {
     font-size: 40px;
     text-align: center;
 }
-.w3-bar.w3-black {
-    
-    display: block;
-    justify-content: center;
-    margin:auto ;
+.first-part{
+    background-color: #000;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    background-image: url(Images/Footer-background.jpg);
+}
+
+.booking{
+    color: #000000; 
+}
+.w3{
+    max-width: 1150px;
+    margin: auto;
 }
 #bookingButton{
-    font-size: 30px;
-    padding: 25px ;
+    font-size: 20px;
+    padding: 20px ;
     color: rgb(0, 0, 0);
-    margin: 20px;
+    margin: auto;
     background-color: #000;
     color: white;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0 ;
 }
 #bookingButton:hover{
     background-color: rgb(226, 53, 53);
 }
 .bookingContent{
-    font-size: 50px;
+    font-size: 20px;
     margin: auto;
-    max-width: 1000px;
+    max-width: 1150px;
     padding: 45px;
-
+    display: flex;
+    padding: 0;
 }
-
-
+.wedding.Booking h2{
+    width: 50%;
+    
+    background-color: #7d7d7d;
+}
 .background.wedding{
     background-image: url(Images/wedding.jpg);
 }
