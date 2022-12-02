@@ -16,8 +16,7 @@
         <a href="restaurant.html" style="color:rgb(104, 53, 38); background-color:white">Restaurant</a>
         <a href="wedding.html" class="button">Wedding</a>
         <a href="party.html" class="button">Party</a>
-        <a href="">More 2</a>
-        <a href="javascript:void(0);" class="menu_icon">Menu</a>
+        <a href="javascript:void(0);" class="menu_icon" onclick="showResponsiveMenu()"><i class="fa fa-bars"></i></a>
     </div>
     <div class="background cafe">
     </div>
@@ -296,5 +295,15 @@
         </div>
     </footer>
     <div class="copyrights">© 2022 Belal Zaidan, Said Aydin, Ahmad Faryabi. All rights reserved.</div>
+    <script>
+        function showResponsiveMenu() {
+            var x = document.getElementById("menu_");
+            if(x.className === "menuBar") {
+                x.className += " responsive";
+            } else {
+                x.className = "menuBar";
+            }
+        }
+    </script>
 </body>
 </html>
