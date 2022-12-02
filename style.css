@@ -47,7 +47,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(97, 123, 139);
+  background-color: rgb(141, 141, 141);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -197,17 +197,18 @@ body {
 }
 
 .backgroundImage-text.wedding{
-    background: rgb(187, 210, 197);
-    color: rgb(68, 86, 97);
+    background: rgb(68, 86, 97);
+    
+    color: rgb(255, 255, 255);
 }
 
 .backgroundImage-text.party{
-    background: rgb(181, 142, 212);
-    color: rgb(85, 0, 78);
+    background: rgb(85, 0, 78);
+    color: rgb(255, 255, 255);
 }
 .backgroundImage-text.cafe{
-    background: rgb(199, 96, 65);
-    color: darkred;
+    background: rgb(141, 72, 51);
+    color: rgb(255, 255, 255);
 }
 
 .row{
@@ -498,7 +499,6 @@ body {
     padding: 0;
 }
 .footer{
-    background-image: url("Images/Footer-background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
