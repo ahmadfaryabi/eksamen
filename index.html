@@ -9,20 +9,17 @@
     <title></title>
 </head>
 <body>
-    <div class="menuBar">
-        <a href="index.html" class="logo">Paramount</a>
-        <a href="index.html" class="button">Home</a>
-        <a href="about.html" class="button">About</a>
-<<<<<<< HEAD
-        <a href="restaurant.html" class="button">Restaurant</a>
-=======
-        <a href="cafe.html" class="button">Café</a>
+    <div class="menuBar" id="menu">
+        <a href="index.html">Paramount</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="restaurant.html">Restaurant</a>
->>>>>>> db17ab7c49c7e775e8d9059dc883952c9c06dcbb
-        <a href="wedding.html" class="button">Wedding</a>
-        <a href="party.html" class="button">Party</a>
+        <a href="cafe.html" >Café</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="wedding.html" >Wedding</a>
+        <a href="party.html">Party</a>
         <a href="" class="button">More 2</a>
-        <a href="javascript:void(0);" class="menu_icon"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="menu_icon" onclick="menuIcon()"><i class="fa fa-bars"></i></a>
     </div>
 
     <div class="background-welcomeText">
@@ -116,5 +113,17 @@
         </div>
     </footer>
     <div class="copyrights">© 2022 Belal Zaidan, Said Aydin, Ahmad Faryabi. All rights reserved.</div>
+    <script>
+
+        function menuIcon() {
+            let x = document.getElementById("menu");
+            if(x.class === "menuBar") {
+                x.class += "  responsive";
+            } else {
+                x.className = "menuBar";
+            }
+        }
+
+    </script>
 </body>
 </html>
