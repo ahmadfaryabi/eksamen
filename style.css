@@ -12,8 +12,11 @@ body {
     top: 0;
     position: sticky; 
     z-index: 2;
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5)
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    width: 100%;
+    transition: 1s;
 }
+
 
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
@@ -31,6 +34,7 @@ body {
     color:rgb(229, 229, 229);
     text-decoration: none;
     font-family: 'Bree Serif', serif;
+    width: auto;
     font-size: 16px;
     text-align: center;
     box-sizing: border-box;
@@ -38,6 +42,11 @@ body {
     display: block;
     float: left;
 }
+
+.menuBar .this_page {
+    color:rgb(0, 29, 55); background-color:white;
+}
+
 .menuBar a:not(:first-child)::before{
   content: "";
   position:relative;
@@ -90,6 +99,7 @@ body {
     background-size:cover;
     background-position: center center;
 }
+
 .background-welcomeText{
     font-size: 5rem;
 	font-weight: 700;
@@ -384,32 +394,27 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    /* removes the a links on the menu, whilst on mobile screen */
+    /* removes the a links, except the first on the menu, whilst on mobile screen */
     .menuBar a:not(:first-child) {
         display: none;
     }
-
+    /* this one is used for the menubar, when pressing the icon on the responsive menubar */
     .menuBar a.menu_icon {
         float: right;
         display: block;
     }
 
+    .menuBar a {
+        width: auto;
+    }
+
     .menuBar.responsive {
-        position: fixed;
+        position: sticky;
+        transition: 1s;
+        margin:0;
     }
 
-    .menuBar.responsive .menu_icon {
-        position:absolute;
-        right:0;
-        top:0;
-    }
-
-    .menuBar.responsive a {
-        float: none;
-        display: block;
-        text-align: center;
-    }
-    .menuBar .menu_icon {
+    .menuBar a.menu_icon {
         display: block;
         float: right;
     }
@@ -424,6 +429,26 @@ body {
     .backgroundImage-text.welcomePage{
         padding-right: 5em;
         padding-left: 5em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .menuBar.responsive {
+        transition: 1s;
+        width: 100%;
+    }
+
+    .menuBar.responsive .menu_icon {
+        position:absolute;
+        right:0;
+        top:0;
+    }
+
+    .menuBar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
 
