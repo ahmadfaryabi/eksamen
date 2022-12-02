@@ -79,13 +79,14 @@ body {
     background-position: center center;
     background-attachment: fixed;
     width: auto;
-    min-height: 20rem;
+    min-height: 40rem;
     z-index: 1;
     
 }
 .background-welcome{
     display: flex;
     flex-wrap: wrap;
+    background-color: #bbbbbb;
 }
 .background-welcomeText{
     font-size: 5rem;
@@ -131,6 +132,47 @@ body {
     font-family:'Audiowide', cursive;
     color: #4074b5;
 }
+
+/*Booking Page*/
+.booking{
+    color: #000000; 
+    text-align: center;
+}
+#logo{
+    font-family: 'Audiowide', cursive;
+    color: rgb(17, 17, 17);
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+}
+.w3-bar.w3-black {
+    
+    display: block;
+    justify-content: center;
+    margin:auto ;
+}
+#bookingButton{
+    font-size: 30px;
+    padding: 25px ;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 10px;
+}
+#bookingButton:hover{
+    background-color: rgb(226, 53, 53);
+}
+.bookingContent{
+    font-size: 50px;
+    margin: auto;
+    max-width: 1000px;
+    padding: 45px;
+
+}
+
+
 .background.wedding{
     background-image: url(Images/wedding.jpg);
 }

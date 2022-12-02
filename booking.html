@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="booking">
+        <h1 id="logo">Paramount <span style="font-family: Arial; color: green;">Booking</span></h1>
+
+        <div class="w3-bar w3-black">
+            <button id="bookingButton" onclick="openType('Wedding Booking')">Wedding</button>
+            <button id="bookingButton" onclick="openType('Party Booking')">Party</button>
+            <button id="bookingButton" onclick="openType('Restaurant Booking')">Restaurant Tables</button>
+            
+        </div>
+    </div>
+
+    
+    <div class="bookingContent">
+        <div id="Main" class="w3-container w3-display-container type">
+            <h2>Main</h2>
+            <p>Please Pick a Topic.</p>
+        </div>
+        <div id="Wedding Booking" class="w3-container w3-display-container type" style="display:none">
+            <h2>Wedding</h2>
+            <div>
+
+            </div>
+        </div>
+        <div id="Party Booking" class="w3-container w3-display-container type" style="display:none">
+            <h2>Party</h2>
+        </div>
+        <div id="Restaurant Booking" class="w3-container w3-display-container type" style="display:none">
+            <h2>Restaurant Tables</h2>
+        </div>
+    </div>  
+    
+      
+    <script>
+      function openType(cityName) {
+        var i;
+        var x = document.getElementsByClassName("type");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        document.getElementById(cityName).style.display = "block";  
+      }
+    </script>
+</div>
+</body>
+</html>
