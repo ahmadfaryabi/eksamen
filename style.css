@@ -12,7 +12,7 @@ body {
     top: 0;
     position: sticky; 
     z-index: 2;
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5)
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
 
 .menuBar .logo{
@@ -169,7 +169,7 @@ body {
 }
 
 .backgroundImage-text.wedding{
-    background: rgb(68, 86, 97);
+    background: rgba(6,158,190,10);
     
     color: rgb(255, 255, 255);
 }
@@ -197,6 +197,90 @@ body {
     font-family: 'Bree Serif', serif;
     font-size: 50px;
 }
+#TextImage1{
+    width: 40.6%;
+    position:flex;
+    padding-top: 10px;
+}
+#TextImage2{
+    width: 18%;
+    padding-top: 10px;
+    position:flex;
+
+}
+
+#TextImage3{
+    max-width: 40.6%;
+    position:flex;
+}
+
+#TextImage4{
+    position:flex;
+    float:right;
+    width: 28%;
+    padding-right: 5%;
+    margin-top:-1% ;
+}
+
+
+
+/*Big Special quote for the paragraphs */
+blockquote {
+    border:none;
+    
+}
+    
+blockquote p {
+        font-size:2.1vw ;
+        text-align: center;
+        
+}
+    
+blockquote p:before { 
+        content: open-quote;
+        font-weight: bold;
+        font-size:100px;
+        color: rgba(6,158,190,10);
+        display: flex;
+        font-family:Georgia, "Times New Roman", Times, serif;
+        margin-bottom:-20px;  
+        
+} 
+blockquote p:after { 
+        content: close-quote;
+        font-weight: bold;
+        font-size:100px;
+        color: rgba(6,158,190,10);
+        display: flex;
+        flex-direction: row-reverse;
+        font-family:Georgia, "Times New Roman", Times, serif;
+        margin-bottom:50px;  
+}
+
+.quotes{
+    font-family: cursive;
+}
+
+.Tittle{
+    display: block;
+    font-family: 'Poppins', sans-serif; 
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align:center;
+    line-height: 1.8;
+    color:rgba(6,158,190,10);
+    font-size: 3vw;
+
+}
+
+.a ul{
+    list-style: none;
+    padding-right:45% ;
+    text-align:center;
+}
+
 .paragraph{
     display: block;
     font-family: 'Poppins', sans-serif; 
@@ -208,17 +292,6 @@ body {
     line-height: 1.8;
 }
 
-.textImage{
-    width: 350px;
-}
-.textImage.right{
-    float: right;
-    padding: 0 0 10px 25px;
-}
-.textImage.left{
-    float:left;
-    padding: 0 25px 10px 0;
-}
 .header{
     max-width: 50%;
     margin-left: auto;
