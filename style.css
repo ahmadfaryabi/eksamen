@@ -13,6 +13,7 @@ body {
     position: fixed; 
     z-index: 2;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    width: 100%;
 }
 
 .menuBar .logo{
@@ -470,11 +471,8 @@ blockquote p:after {
 
     .menuBar.responsive {
         position: fixed;
-<<<<<<< HEAD
         transition: 1s;
         margin:0;
-=======
->>>>>>> 35d7ab6089ebd4ffa6972f6d10ef9208264fa8f3
     }
 
     .menuBar.responsive .menu_icon {
