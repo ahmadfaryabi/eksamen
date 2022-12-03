@@ -13,10 +13,7 @@ body {
     position: fixed; 
     z-index: 2;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
-    width: 100%;
-    transition: 1s;
 }
-
 
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
@@ -34,7 +31,6 @@ body {
     color:rgb(229, 229, 229);
     text-decoration: none;
     font-family: 'Bree Serif', serif;
-    width: auto;
     font-size: 16px;
     text-align: center;
     box-sizing: border-box;
@@ -42,11 +38,6 @@ body {
     display: block;
     float: left;
 }
-
-.menuBar .this_page {
-    color:rgb(0, 29, 55); background-color:white;
-}
-
 .menuBar a:not(:first-child)::before{
   content: "";
   position:relative;
@@ -99,7 +90,6 @@ body {
     background-size:cover;
     background-position: center center;
 }
-
 .background-welcomeText{
     font-size: 5rem;
 	font-weight: 700;
@@ -115,43 +105,12 @@ body {
     text-align: center;
     
 }
-#slider {
-     overflow: hidden; 
-     max-width: 400px;
-    }
-#slider figure img {
-     width: 20%; float: left; 
-    }
-#slider figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite; 
-}
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
 .background-welcomeText span{
     font-family:'Audiowide', cursive;
     color: #4074b5;
 }
 
 /*Booking Page*/
-.booking{
-    color: #000000; 
-    text-align: center;
-}
 #logo{
     font-family: 'Audiowide', cursive;
     color: rgb(17, 17, 17);
@@ -159,32 +118,46 @@ body {
     text-decoration: none;
     font-size: 40px;
     text-align: center;
+    margin: 0;
 }
-.w3-bar.w3-black {
-    
-    display: block;
-    justify-content: center;
-    margin:auto ;
+.first-part{
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    background-image: url(Images/Footer-background.jpg);
+}
+
+.booking{
+    color: #000000; 
+}
+.w3{
+    max-width: 1000px;
+    margin: auto;
+}
+.w3-container{
+    border: 1px solid black;
 }
 #bookingButton{
-    font-size: 30px;
-    padding: 25px ;
+    font-size: 20px;
+    padding: 20px ;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    margin: 20px;
-    background-color: #000;
-    color: white;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0 ;
 }
 #bookingButton:hover{
-    background-color: rgb(226, 53, 53);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
-.bookingContent{
-    font-size: 50px;
-    margin: auto;
-    max-width: 1000px;
-    padding: 45px;
+.wedding.Booking h2{
+    width: 50%;
+    
+    background-color: #7d7d7d;
+}
 
-}
+
+
+
 
 
 .background.wedding{
@@ -205,7 +178,7 @@ body {
 }
 
 .backgroundImage-text.wedding{
-    background: rgb(68, 86, 97);
+    background: rgba(6,158,190,10);
     
     color: rgb(255, 255, 255);
 }
@@ -233,6 +206,90 @@ body {
     font-family: 'Bree Serif', serif;
     font-size: 50px;
 }
+#TextImage1{
+    width: 40.6%;
+    position:flex;
+    padding-top: 10px;
+}
+#TextImage2{
+    width: 18%;
+    padding-top: 10px;
+    position:flex;
+
+}
+
+#TextImage3{
+    max-width: 40.6%;
+    position:flex;
+}
+
+#TextImage4{
+    position:flex;
+    float:right;
+    width: 28%;
+    padding-right: 5%;
+    margin-top:-1% ;
+}
+
+
+
+/*Big Special quote for the paragraphs */
+blockquote {
+    border:none;
+    
+}
+    
+blockquote p {
+        font-size:2.1vw ;
+        text-align: center;
+        
+}
+    
+blockquote p:before { 
+        content: open-quote;
+        font-weight: bold;
+        font-size:100px;
+        color: rgba(6,158,190,10);
+        display: flex;
+        font-family:Georgia, "Times New Roman", Times, serif;
+        margin-bottom:-20px;  
+        
+} 
+blockquote p:after { 
+        content: close-quote;
+        font-weight: bold;
+        font-size:100px;
+        color: rgba(6,158,190,10);
+        display: flex;
+        flex-direction: row-reverse;
+        font-family:Georgia, "Times New Roman", Times, serif;
+        margin-bottom:50px;  
+}
+
+.quotes{
+    font-family: cursive;
+}
+
+.Tittle{
+    display: block;
+    font-family: 'Poppins', sans-serif; 
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align:center;
+    line-height: 1.8;
+    color:rgba(6,158,190,10);
+    font-size: 3vw;
+
+}
+
+.a ul{
+    list-style: none;
+    padding-right:45% ;
+    text-align:center;
+}
+
 .paragraph{
     display: block;
     font-family: 'Poppins', sans-serif; 
@@ -244,17 +301,6 @@ body {
     line-height: 1.8;
 }
 
-.textImage{
-    width: 350px;
-}
-.textImage.right{
-    float: right;
-    padding: 0 0 10px 25px;
-}
-.textImage.left{
-    float:left;
-    padding: 0 25px 10px 0;
-}
 .header{
     max-width: 50%;
     margin-left: auto;
@@ -412,27 +458,37 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    /* removes the a links, except the first on the menu, whilst on mobile screen */
+    /* removes the a links on the menu, whilst on mobile screen */
     .menuBar a:not(:first-child) {
         display: none;
     }
-    /* this one is used for the menubar, when pressing the icon on the responsive menubar */
+
     .menuBar a.menu_icon {
         float: right;
         display: block;
     }
 
-    .menuBar a {
-        width: auto;
-    }
-
     .menuBar.responsive {
         position: fixed;
+<<<<<<< HEAD
         transition: 1s;
         margin:0;
+=======
+>>>>>>> 35d7ab6089ebd4ffa6972f6d10ef9208264fa8f3
     }
 
-    .menuBar a.menu_icon {
+    .menuBar.responsive .menu_icon {
+        position:absolute;
+        right:0;
+        top:0;
+    }
+
+    .menuBar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .menuBar .menu_icon {
         display: block;
         float: right;
     }
@@ -447,26 +503,6 @@ body {
     .backgroundImage-text.welcomePage{
         padding-right: 5em;
         padding-left: 5em;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-
-    .menuBar.responsive {
-        transition: 1s;
-        width: 100%;
-    }
-
-    .menuBar.responsive .menu_icon {
-        position:absolute;
-        right:0;
-        top:0;
-    }
-
-    .menuBar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
     }
 }
 
