@@ -118,9 +118,9 @@ body {
     text-decoration: none;
     font-size: 40px;
     text-align: center;
+    margin: 0;
 }
 .first-part{
-    background-color: #000;
     margin: auto;
     height: 500px;
     width: 500px;
@@ -131,26 +131,35 @@ body {
     color: #000000; 
 }
 .w3{
-    max-width: 1150px;
+    max-width: 1000px;
     margin: auto;
+}
+.w3-container{
+    border: 1px solid black;
 }
 #bookingButton{
     font-size: 20px;
     padding: 20px ;
-    color: rgb(0, 0, 0);
     margin: auto;
-    background-color: #000;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 10px 10px 0 0 ;
 }
 #bookingButton:hover{
-    background-color: rgb(226, 53, 53);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 .wedding.Booking h2{
     width: 50%;
     
     background-color: #7d7d7d;
 }
+
+
+
+
+
+
 .background.wedding{
     background-image: url(Images/wedding.jpg);
 }
