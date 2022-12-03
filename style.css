@@ -166,7 +166,7 @@ body {
 }
 
 .background.party{
-    background-image: url(Images/party.jpg);
+    background-image: url(Images/meetings.jpg);
 }
 
 .background.cafe{
@@ -185,7 +185,7 @@ body {
 }
 
 .backgroundImage-text.party{
-    background: rgb(85, 0, 78);
+    background: rgb(28, 27, 28);
     color: rgb(255, 255, 255);
 }
 .backgroundImage-text.cafe{
