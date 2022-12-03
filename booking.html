@@ -45,9 +45,8 @@
       
     <script>
       function openType(cityName) {
-        var i;
         var x = document.getElementsByClassName("type");
-        for (i = 0; i < x.length; i++) {
+        for (var i = 0; i < x.length; i++) {
           x[i].style.display = "none";  
         }
         document.getElementById(cityName).style.display = "block";  
