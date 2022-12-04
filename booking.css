@@ -239,6 +239,10 @@
     .booking-content{
         width: 100%;
     }
+    .booking{
+        height: 50rem;
+      }
+
 }
 @media screen and (max-width: 440px){
     .tab-content{
