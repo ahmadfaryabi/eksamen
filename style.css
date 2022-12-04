@@ -417,11 +417,6 @@ blockquote p:after {
 .menuCard-Gaming:hover{
     transform: scale(1.01);
 }
-.card-image img{   
-    border-radius: 15px 15px 0 0 ;
-    width: 100%;
-    align-items: center;
-}
 .card-content.Gaming h3{
     border: 1px dashed black;
     width: 50%;
@@ -579,7 +574,7 @@ blockquote p:after {
     .header{
         font-size: 28px;
     }
-    .menuCard{
+    .menuCard, .menuCard-Gaming{
         width: 43%;
         height: 16.5%;
     }
@@ -587,7 +582,7 @@ blockquote p:after {
         width: 100%;
         border: none;
     }
-    .card-content{
+    .card-content , .card-content.Gaming{
         font-size: 12px;
     }
     .background-welcomeText p{
@@ -613,7 +608,7 @@ blockquote p:after {
         font-size: 12px;
     }
     
-    .menuCard{
+    .menuCard, .menuCard-Gaming{
         width: 40%;
         height: 16.5%;
     }
