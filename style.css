@@ -287,6 +287,13 @@ blockquote p:after {
     padding: 40px;
     width: 60%;
 }
+.section2{
+    background-color: rgb(28, 27, 28);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-left: 40%;
+}
 
 .section img{
     height: 250px;
@@ -297,6 +304,18 @@ blockquote p:after {
 }
 
 .section p{
+     color: white;
+     margin: 15px;
+}
+.section2 img{
+    height: 250px;
+}
+
+.section2 h2{
+   color:white;
+}
+
+.section2 p{
      color: white;
      margin: 15px;
 }
