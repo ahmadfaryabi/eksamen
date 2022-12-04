@@ -16,7 +16,7 @@ body {
     background-color: rgb(0, 39, 55);
     overflow: hidden;
     top: 0;
-    position: fixed; 
+    position: sticky; 
     z-index: 2;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
     width: 100%;
@@ -127,16 +127,21 @@ body {
     background-image: url(Images/wedding.jpg);
 }
 
-.background.party{
+.background.meeting{
     background-image: url(Images/meetings.jpg);
 }
 
 .background.cafe{
     background-image: url(Images/cafe.jpg);
 }
+<<<<<<< HEAD
 /*link: https://www.smartcitiesworld.net/opinions/opinions/the-14-pillars-of-a-smart-city*/
 .background.data1100 {
     background-image: url("Images/data1100_bcg.jpeg");
+=======
+.background.data1100 {
+    background-image: url(Images/data1100.jpeg);
+>>>>>>> 8b270ac593b94116e44ee777c6b41d46a660b20b
 }
 .background.gaming{
     background-image: url(Images/gaming.jpg);
@@ -152,7 +157,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.backgroundImage-text.party{
+.backgroundImage-text.meeting{
     background: rgb(28, 27, 28);
     color: rgb(255, 255, 255);
 }
@@ -187,8 +192,11 @@ body {
 .textImage{
     width: 350px;
 }
+.textImage.textImage-right{
+    float:right;
+    padding: 0 0 10px 25px;
+}
 .textImage.right{
-    float: right;
     padding: 0 0 10px 25px;
 }
 .textImage.left{
@@ -322,18 +330,6 @@ blockquote p:after {
     /* margin-top: 5rem; */
 }
 
-.a ul{
-    list-style: none;
-    padding-right:55% ;
-    text-align:center;
-}
-
-.b ul{
-    list-style: none;
-    margin-right:2%;
-    text-align:center;
-    padding-left: 2%;
-}
 
 .section{
     background-color: rgb(28, 27, 28);
@@ -341,6 +337,13 @@ blockquote p:after {
     justify-content: space-between;
     padding: 40px;
     width: 60%;
+}
+.section2{
+    background-color: rgb(28, 27, 28);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-left: 40%;
 }
 
 .section img{
@@ -352,6 +355,18 @@ blockquote p:after {
 }
 
 .section p{
+     color: white;
+     margin: 15px;
+}
+.section2 img{
+    height: 250px;
+}
+
+.section2 h2{
+   color:white;
+}
+
+.section2 p{
      color: white;
      margin: 15px;
 }
@@ -405,6 +420,10 @@ blockquote p:after {
     flex-wrap: wrap;
     justify-content: center;
 }
+.menu.food .product,
+    .menu.appetizer .product{
+        padding: 5px;
+    }
 .menuCard{
     display: flex;
     flex-wrap: wrap;  
@@ -490,7 +509,7 @@ blockquote p:after {
 #Restaurant{
     background: url(Images/card-background2.jpg)center / cover;
 }
-#Party{
+#Meeting{
     background: url(Images/card-background3.jpg)center / cover;
 }
 #Gaming{
@@ -637,6 +656,10 @@ blockquote p:after {
     .background-welcomeText p{
         font-size:2rem ;
     }
+    .menu.food .product,
+    .menu.appetizer .product{
+        font-size: 12px;
+    }
 }
 @media screen and (min-width:671px) and (max-width: 1151px){
     .menuCard{
@@ -661,6 +684,14 @@ blockquote p:after {
         width: 40%;
         height: 16.5%;
     }
+}
+@media screen and (max-width: 600px) {
+    .backdround.cafe{
+        background-image: url(Images/cafe2.jpg);
+    }
+    .background.gaming{
+        background-image: url(Images/gaming2.jpg);
+    } 
 }
 
 /*footer*/
@@ -774,7 +805,7 @@ blockquote p:after {
     background-color: #ffffff;
 }
 .footer-col .social-links a:hover:nth-child(4){
-    color: #9700d3;
+    color: #0051ff;
     background-color: #ffffff;
 }
 
