@@ -129,13 +129,11 @@ body {
 .background.cafe{
     background-image: url(Images/cafe.jpg);
 }
-<<<<<<< HEAD
 .background.data1100 {
     background-image: url("Images/data1100.jpeg");
-=======
+}
 .background.gaming{
     background-image: url(Images/gaming.jpg);
->>>>>>> b90de8ec8e7dee4702f78ad05cb83d5dd3f256b8
 }
 .backgroundImage-text{
     margin: auto;
