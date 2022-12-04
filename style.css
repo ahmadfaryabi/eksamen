@@ -111,51 +111,6 @@ body {
     color: #4074b5;
 }
 
-/*Booking Page*/
-#logo{
-    font-family: 'Audiowide', cursive;
-    color: rgb(17, 17, 17);
-    padding: 20px 20px;
-    text-decoration: none;
-    font-size: 40px;
-    text-align: center;
-    margin: 0;
-}
-.first-part{
-    margin: auto;
-    height: 500px;
-    width: 500px;
-    background-image: url(Images/Footer-background.jpg);
-}
-
-.booking{
-    color: #000000; 
-}
-.w3{
-    max-width: 1000px;
-    margin: auto;
-}
-.w3-container{
-    border: 1px solid black;
-}
-#bookingButton{
-    font-size: 20px;
-    padding: 20px ;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border-radius: 10px 10px 0 0 ;
-}
-#bookingButton:hover{
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-.wedding.Booking h2{
-    width: 50%;
-    
-    background-color: #7d7d7d;
-}
-
 .background.wedding{
     background-image: url(Images/wedding.jpg);
 }
@@ -356,8 +311,8 @@ blockquote p:after {
 }
 .menuCard{
     display: flex;
-    flex-wrap: wrap;
-    width: 22%;   
+    flex-wrap: wrap;  
+    width: 22%; 
     border: 1px dashed black;
     border-radius: 15px;
     background: white;
@@ -370,7 +325,7 @@ blockquote p:after {
     transform: scale(1.01);
 }
 .card-image img{   
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0 ;
     width: 100%;
     align-items: center;
 }
@@ -567,6 +522,16 @@ blockquote p:after {
 @media screen and (max-width: 1217px){
     .Container{
         max-width: 620px;
+    }
+}
+@media screen and (max-width: 364px){
+    .product{
+        font-size: 12px;
+    }
+    
+    .menuCard{
+        width: 40%;
+        height: 16.5%;
     }
 }
 

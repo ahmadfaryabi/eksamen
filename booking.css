@@ -226,7 +226,7 @@
   }
 
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 730px){
     .tab-content{
         margin-top: 50px;
         display: block;
@@ -257,7 +257,7 @@
 
 .container-footer{
     max-width:1170px;
-    margin: auto;
+    margin: 0;
 }
 .footer .row{
     max-width: 1170px;
@@ -374,6 +374,9 @@
     }
     .footer-col .social-links{
         max-width: 100%;
+    }
+    .footer iframe{
+        width: 100%;
     }
 }
 @media(max-width: 574px){
