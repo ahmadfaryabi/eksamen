@@ -112,14 +112,12 @@
             </div>
         </div>
     </footer>
-    <div class="copyrights">© 2022 Paramount. All rights reserved.</div>    
-    
-    <script>
+    <div class="copyrights">© 2022 Paramount. All rights reserved.</div>    <script>
 
         function menuIcon() {
-            let x = document.getElementById("menu");
-            if(x.class === "menuBar") {
-                x.class += "  responsive";
+            let x = document.getElementById("menu_");
+            if(x.className === "menuBar") {
+                x.className += "  responsive";
             } else {
                 x.className = "menuBar";
             }
