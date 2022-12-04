@@ -366,6 +366,30 @@ blockquote p:after {
      margin: 15px;
 }
 
+li.tit{
+    list-style-type: "✓";
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+li.tit2{
+    list-style-type: "✓";
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+p.tit{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+p.tit2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
 .paragraph{
     display: block;
     font-family: 'Poppins', sans-serif;
