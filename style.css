@@ -130,7 +130,7 @@ body {
     background-image: url(Images/cafe.jpg);
 }
 .background.data1100 {
-    background-image: url("Images/data1100.jpeg");
+    background-image: url(Images/data1100.jpeg);
 }
 .background.gaming{
     background-image: url(Images/gaming.jpg);
@@ -180,6 +180,10 @@ body {
 }
 .textImage{
     width: 350px;
+}
+.textImage.textImage-right{
+    float:right;
+    padding: 0 0 10px 25px;
 }
 .textImage.right{
     padding: 0 0 10px 25px;
@@ -369,6 +373,10 @@ blockquote p:after {
     flex-wrap: wrap;
     justify-content: center;
 }
+.menu.food .product,
+    .menu.appetizer .product{
+        padding: 5px;
+    }
 .menuCard{
     display: flex;
     flex-wrap: wrap;  
@@ -601,6 +609,10 @@ blockquote p:after {
     .background-welcomeText p{
         font-size:2rem ;
     }
+    .menu.food .product,
+    .menu.appetizer .product{
+        font-size: 12px;
+    }
 }
 @media screen and (min-width:671px) and (max-width: 1151px){
     .menuCard{
@@ -625,6 +637,14 @@ blockquote p:after {
         width: 40%;
         height: 16.5%;
     }
+}
+@media screen and (max-width: 600px) {
+    .backdround.cafe{
+        background-image: url(Images/cafe2.jpg);
+    }
+    .background.gaming{
+        background-image: url(Images/gaming2.jpg);
+    } 
 }
 
 /*footer*/
@@ -738,7 +758,7 @@ blockquote p:after {
     background-color: #ffffff;
 }
 .footer-col .social-links a:hover:nth-child(4){
-    color: #9700d3;
+    color: #0051ff;
     background-color: #ffffff;
 }
 
