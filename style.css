@@ -167,12 +167,14 @@ body {
 .background.cafe{
     background-image: url(Images/cafe.jpg);
 }
+.background.data1100 {
+    background-image: url("Images/data1100.jpeg");
+}
 .backgroundImage-text{
     margin: auto;
     padding: 10px;
     padding-left: 5em;
 }
-
 .backgroundImage-text.wedding{
     background: rgba(6,158,190,10);
     
@@ -185,6 +187,11 @@ body {
 }
 .backgroundImage-text.cafe{
     background: rgb(141, 72, 51);
+    color: rgb(255, 255, 255);
+}
+
+.backgroundImage-text.data1100 {
+    background-color: #5d7e74;
     color: rgb(255, 255, 255);
 }
 
