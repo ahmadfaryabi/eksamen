@@ -134,14 +134,9 @@ body {
 .background.cafe{
     background-image: url(Images/cafe.jpg);
 }
-<<<<<<< HEAD
 /*link: https://www.smartcitiesworld.net/opinions/opinions/the-14-pillars-of-a-smart-city*/
 .background.data1100 {
     background-image: url("Images/data1100_bcg.jpeg");
-=======
-.background.data1100 {
-    background-image: url(Images/data1100.jpeg);
->>>>>>> 8b270ac593b94116e44ee777c6b41d46a660b20b
 }
 .background.gaming{
     background-image: url(Images/gaming.jpg);

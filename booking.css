@@ -246,7 +246,6 @@
     .menuBar a:not(:first-child) {
         display: none;
     }
-<<<<<<< HEAD
 
     .menuBar a.menu_icon {
         float: right;
@@ -274,9 +273,7 @@
         display: block;
         float: right;
     }
-}
-=======
->>>>>>> 8b270ac593b94116e44ee777c6b41d46a660b20b
+
 
     .menuBar a.menu_icon {
         float: right;
