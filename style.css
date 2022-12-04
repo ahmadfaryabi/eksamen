@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bree+Serif&family=Outfit:wght@600&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu+Condensed&family=Ubuntu:wght@700&display=swap');
 body {
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(239, 239, 239);
     margin:0px;
     user-select: none;
+    /* display: list-item; */
 }
 
 .menuBar {
@@ -16,6 +17,12 @@ body {
     width: 100%;
 }
 
+.a {
+    margin: 10rem;
+}
+.b {
+    margin: 10rem;
+}
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
     color: rgb(145, 184, 208);
@@ -177,9 +184,23 @@ body {
 #TextImage4{
     position:flex;
     float:right;
-    width: 28%;
-    padding-right: 5%;
-    margin-top:-1% ;
+    width: 50%;
+    margin-top:5%;
+    /* padding-right: 1%; */
+    /* position: relative; */
+    margin-left: 1rem;
+}
+
+#TextImage5{
+    position:flex;
+    /* position: relative; */
+    float:left;
+    width: 50%;
+    /* margin-top:5%; */
+    /* padding-left: 1%; */
+    height: 25rem;
+    margin-right: 1rem;
+    /* margin-bottom: 5rem; */
 }
 
 
@@ -214,7 +235,7 @@ blockquote p:after {
         display: flex;
         flex-direction: row-reverse;
         font-family:Georgia, "Times New Roman", Times, serif;
-        margin-bottom:50px;  
+        margin-bottom:-100px;  
 }
 
 .quotes{
@@ -223,22 +244,28 @@ blockquote p:after {
 
 .Tittle{
     display: block;
-    font-family: 'Poppins', sans-serif; 
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-family: 'Poppins', sans-serif;
+    /* margin-block-start: 1em; */
+    /* margin-inline-start: 0px; */
+    /* margin-inline-end: 0px; */
     text-align:center;
-    line-height: 1.8;
+    line-height: 1.6;
     color:rgba(6,158,190,10);
     font-size: 3vw;
-
+    /* margin-top: 5rem; */
 }
 
 .a ul{
     list-style: none;
-    padding-right:45% ;
+    padding-right:55% ;
     text-align:center;
+}
+
+.b ul{
+    list-style: none;
+    margin-right:2%;
+    text-align:center;
+    padding-left: 2%;
 }
 
 .section{
@@ -264,13 +291,15 @@ blockquote p:after {
 
 .paragraph{
     display: block;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align:justify;
-    line-height: 1.8;
+    line-height: 1.6;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .header{
