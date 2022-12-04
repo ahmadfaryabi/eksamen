@@ -182,7 +182,6 @@ body {
     width: 350px;
 }
 .textImage.right{
-    float: right;
     padding: 0 0 10px 25px;
 }
 .textImage.left{
@@ -280,18 +279,6 @@ blockquote p:after {
     /* margin-top: 5rem; */
 }
 
-.a ul{
-    list-style: none;
-    padding-right:55% ;
-    text-align:center;
-}
-
-.b ul{
-    list-style: none;
-    margin-right:2%;
-    text-align:center;
-    padding-left: 2%;
-}
 
 .section{
     background-color: rgb(28, 27, 28);
