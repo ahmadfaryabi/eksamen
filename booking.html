@@ -7,6 +7,7 @@
     <title>Your Booking</title>
     <link rel="stylesheet" href="booking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="website icon" type="png" href="Images/favicon.png">
 </head>
 <body>
     <div class="menuBar" id="menu_">
@@ -108,12 +109,12 @@
             <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
             <label for="tab-4" class="tab-label" id="word">More Info</label>
             <div class="tab-content more-info">
-                 <div class="booking-content" style="width: 75%;">
-                    <h3 class="line-height:1.5;">You can read about our offers by clicking on the links below</h3> <br>
+                 <div class="booking-content" >
+                    <h2 >You can read about our offers by clicking on the links below</h2> 
                     <div>
-                        <a href="restaurant.html"><h2>Our Menu</h2></a>
-                        <a href="meeting.html"><h2>Meetings</h2></a>
-                        <a href="wedding.html"><h2>Wedding</h4></a>
+                        <a href="restaurant.html"><h3>Our Menu <i class="fa-solid fa-up-right-from-square"></i></h3></a>
+                        <a href="meeting.html"><h3>Meetings <i class="fa-solid fa-up-right-from-square"></i></h3></a>
+                        <a href="wedding.html"><h3>Wedding <i class="fa-solid fa-up-right-from-square"></i></h3></a>
                     </div>
                 </div>
             </div>
@@ -175,9 +176,9 @@
       <script>
 
         function menuIcon() {
-            let x = document.getElementById("menu");
-            if(x.class === "menuBar") {
-                x.class += "  responsive";
+            let x = document.getElementById("menu_");
+            if(x.className === "menuBar") {
+                x.className += "  responsive";
             } else {
                 x.className = "menuBar";
             }
