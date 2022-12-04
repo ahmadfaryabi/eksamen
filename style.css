@@ -545,6 +545,14 @@ blockquote p:after {
         transition: 1s;
         margin:0;
     }
+    
+    .menuBar a:hover::before{
+        transform: scaleX(0);
+        
+    }
+    .menuBar a:hover:not(:first-child){
+        color:rgb(216, 172, 27);
+    }
 
     .menuBar.responsive .menu_icon {
         position:absolute;
@@ -608,10 +616,6 @@ blockquote p:after {
     }
     .background-welcomeText p{
         font-size:2rem ;
-    }
-    .menu.food .product,
-    .menu.appetizer .product{
-        font-size: 12px;
     }
 }
 @media screen and (min-width:671px) and (max-width: 1151px){
