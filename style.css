@@ -156,11 +156,6 @@ body {
     background-color: #7d7d7d;
 }
 
-
-
-
-
-
 .background.wedding{
     background-image: url(Images/wedding.jpg);
 }
@@ -289,6 +284,27 @@ blockquote p:after {
     list-style: none;
     padding-right:45% ;
     text-align:center;
+}
+
+.section{
+    background-color: rgb(28, 27, 28);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 60%;
+}
+
+.section img{
+    height: 250px;
+}
+
+.section h2{
+   color:white;
+}
+
+.section p{
+     color: white;
+     margin: 15px;
 }
 
 .paragraph{
