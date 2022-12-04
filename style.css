@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bree+Serif&family=Outfit:wght@600&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu+Condensed&family=Ubuntu:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(239, 239, 239);
@@ -129,13 +134,12 @@ body {
 .background.cafe{
     background-image: url(Images/cafe.jpg);
 }
-<<<<<<< HEAD
+/*link: https://www.smartcitiesworld.net/opinions/opinions/the-14-pillars-of-a-smart-city*/
 .background.data1100 {
-    background-image: url("Images/data1100.jpeg");
-=======
+    background-image: url("Images/data1100_bcg.jpeg");
+}
 .background.gaming{
     background-image: url(Images/gaming.jpg);
->>>>>>> b90de8ec8e7dee4702f78ad05cb83d5dd3f256b8
 }
 .backgroundImage-text{
     margin: auto;
@@ -162,7 +166,7 @@ body {
 }
 
 .backgroundImage-text.data1100 {
-    background-color: #5d7e74;
+    background-color: rgb(93, 126, 116);
     color: rgb(255, 255, 255);
 }
 
@@ -200,12 +204,48 @@ body {
     width: 18%;
     padding-top: 10px;
     position:flex;
+}
 
+.contents_box {
+    background-color: rgb(212, 212, 212);
+    padding: 5px 20px;
+    margin: 20px;
+    line-height: 180%;
+    border-radius: 15px;
+    max-width: 500px;
+    color: rgb(81, 81, 81);
+}
+
+.contents_box a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(81, 81, 81);
+    font-weight: normal;
+}
+
+.contents_box a:hover {
+    font-weight: bolder;
 }
 
 #TextImage3{
     max-width: 40.6%;
     position:flex;
+}
+
+.flex.data1100 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div_flex.data1100 {
+    margin: 0 auto;
+    width:43%;
+    padding: 20px;
+}
+
+.img_data1100 {
+    width: 300px;
 }
 
 #TextImage4{

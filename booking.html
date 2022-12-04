@@ -19,7 +19,7 @@
         <a href="wedding.html" >Wedding</a>
         <a href="party.html">Party</a>
         
-        <a href="javascript:void(0);" class="menu_icon" onclick="showResponsiveMenu()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="menu_icon" onclick="menuIcon()"><i class="fa fa-bars"></i></a>
     </div>
     <div class="booking" >
         
@@ -175,9 +175,9 @@
       <script>
 
         function menuIcon() {
-            let x = document.getElementById("menu");
-            if(x.class === "menuBar") {
-                x.class += "  responsive";
+            let x = document.getElementById("menu_");
+            if(x.className === "menuBar") {
+                x.className += "  responsive";
             } else {
                 x.className = "menuBar";
             }

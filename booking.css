@@ -31,8 +31,10 @@
   .menuBar {
     background-color: rgb(230, 230, 230);
     overflow: hidden;
-    position: sticky; 
+    position: fixed; 
+    margin-bottom: 50px;
     top: 0;
+    width: 100%;
     z-index: 3;
     border-bottom: 1px solid  rgb(95, 69, 60);
 }
@@ -88,7 +90,7 @@
   .wrapper {
     max-width: 1170px;
     width: 100%;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 0 30px;
   }
   .wrapper ul{
@@ -226,6 +228,39 @@
     transition: all 0.35s;
   }
 
+  @media screen and (max-width: 1000px) {
+    /* removes the a links on the menu, whilst on mobile screen */
+    .menuBar a:not(:first-child) {
+        display: none;
+    }
+
+    .menuBar a.menu_icon {
+        float: right;
+        display: block;
+    }
+
+    .menuBar.responsive {
+        position: fixed;
+        transition: 1s;
+        margin:0;
+    }
+
+    .menuBar.responsive .menu_icon {
+        position:absolute;
+        right:0;
+        top:0;
+    }
+
+    .menuBar.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .menuBar .menu_icon {
+        display: block;
+        float: right;
+    }
+}
 
 @media screen and (max-width: 730px){
     .tab-content{
