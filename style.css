@@ -129,6 +129,9 @@ body {
 .background.cafe{
     background-image: url(Images/cafe.jpg);
 }
+.background.gaming{
+    background-image: url(Images/gaming.jpg);
+}
 .backgroundImage-text{
     margin: auto;
     padding: 10px;
@@ -149,6 +152,10 @@ body {
     background: rgb(141, 72, 51);
     color: rgb(255, 255, 255);
 }
+.backgroundImage-text.gaming{
+    background: rgb(15, 80, 0);
+    color: rgb(255, 255, 255);
+}
 
 .row{
     max-width: 1000px;
@@ -163,6 +170,17 @@ body {
     display: block;
     font-family: 'Bree Serif', serif;
     font-size: 50px;
+}
+.textImage{
+    width: 350px;
+}
+.textImage.right{
+    float: right;
+    padding: 0 0 10px 25px;
+}
+.textImage.left{
+    float:left;
+    padding: 0 25px 10px 0;
 }
 #TextImage1{
     width: 40.6%;
@@ -297,7 +315,7 @@ blockquote p:after {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align:justify;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -382,6 +400,35 @@ blockquote p:after {
     background-color: rgb(104, 53, 38);
     border-radius: 10px;
 
+}
+/*Gaming*/
+.menuCard-Gaming{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 22%; 
+    border: 1px dashed black;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.2);  
+    margin: 10px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(63, 104, 38, 0.5) 100%);
+    transition: 0.5s;
+}
+.menuCard-Gaming:hover{
+    transform: scale(1.01);
+}
+.card-image img{   
+    border-radius: 15px 15px 0 0 ;
+    width: 100%;
+    align-items: center;
+}
+.card-content.Gaming h3{
+    border: 1px dashed black;
+    width: 50%;
+    margin: 0 auto 10px auto;
+    background-color: rgb(45, 104, 38);
+    color: white;
+    border-radius: 10px;
 }
 .card{
     box-sizing: border-box;
