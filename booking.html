@@ -5,54 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Booking</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="menuBar" id="menu_">
+        <a href="index.html" class="logo">Paramount</a>
+        <a href="index.html" class="this_page">Home</a>
+        <a href="booking.html">Booking</a>
+        <a href="booking.html">Topical</a>
+        <a href="booking.html">Accessibility</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="wedding.html" >Wedding</a>
+        <a href="party.html">Party</a>
+        
+        <a href="javascript:void(0);" class="menu_icon" onclick="showResponsiveMenu()"><i class="fa fa-bars"></i></a>
+    </div>
     <div class="booking" >
-        <h1 id="logo" >Paramount <span style="font-family: Arial; color: green;">Booking</span></h1>
+        
+        
+    <div class="wrapper">
+        <h1 id="logo" >Please Pick a Topic</h1>
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-0"  checked class="tab-switch">
+                <label for="tab-0" class="tab-label" style="display: none ;">Topic picking</label>
+                <div class="tab-content intro" id="topic" >
+                    <div class="image intro"></div>
+                </div>
+            </div>
 
-        <div class="w3">
-            <button id="bookingButton" onclick="openType('Wedding Booking')">Wedding</button>
-            <button id="bookingButton" onclick="openType('Party Booking')">Party</button>
-            <button id="bookingButton" onclick="openType('Restaurant Booking')">Restaurant Tables</button>
-            
+
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-1" class="tab-switch">
+            <label for="tab-1" class="tab-label" id="word">Restaurant tables</label>
+            <div class="tab-content restaurant">
+                <div class="image restaurant"></div> 
+                 <div class="booking-content">
+                    <p> <i class="fa-solid fa-user"></i> Reference Person Name</p>
+                    <input type="text" placeholder="Kylian Mbappé">
+                    <p> <i class="fa-solid fa-envelope"></i> Email</p>
+                    <input type="text" placeholder="mbappe.kylian@example.com">
+                    <p> <i class="fa-solid fa-user-group"></i> Number of Participants</p>
+                    <input type="number" min="1" required>
+                    
+                    <input type="submit" value="Submit" id="submit1" >
+                </div>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            <label for="tab-2" class="tab-label" id="word">Meeting Room</label>
+            <div class="tab-content conference">
+                <div class="image conference"></div> 
+                 <div class="booking-content">
+                    <p> <i class="fa-solid fa-user"></i> Reference Person Name</p>
+                    <input type="text" placeholder="Lionel Messi">
+                    <p> <i class="fa-solid fa-envelope"></i> Email</p>
+                    <input type="text" placeholder="leo.messi@example.com">
+                    <p> <i class="fa-solid fa-user-group"></i> Number of Participants</p>
+                    <input type="number" min="1" required>
+                    <p>  Start Time </p>
+                    <input type="time" id="appt" name="appt"
+                    min="09:00" max="18:00" required>
+                    <p>  End Time</p>
+                    <input type="time" id="appt"  name="appt"
+                    min="09:00" max="18:00" required >
+                    
+                    <input type="submit" value="Submit" id="submit2" >
+                </div>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+            <label for="tab-3" class="tab-label" id="word">Wedding Hall</label>
+            <div class="tab-content wedding">
+                <div class="image wedding"></div> 
+                 <div class="booking-content">
+                    <p> <i class="fa-solid fa-user"></i> Reference Person Name</p>
+                    <input type="text" placeholder="Christiano Ronaldo">
+                    <p> <i class="fa-solid fa-envelope"></i> Email</p>
+                    <input type="text" placeholder="suiii@example.com">
+                    <p> <i class="fa-solid fa-user-group"></i> Number of Participants</p>
+                    <input type="number" min="1" required>
+                    <p></p>
+                    <label for="pet-select" style="padding:20px">Select a pack</label>
+
+                    <select name="packs">
+                        <option value=""></option>
+                        <option value="pack1">Pack 1</option>
+                        <option value="pack2">Pack 2</option>
+                        <option value="pack3">Pack 3</option>
+                        <option value="pack4">Pack 4</option>
+                    </select>
+                    
+                    <input type="submit" value="Submit" id="submit3" style="margin-top:25px ;">
+                </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    
-    <div class="bookingContent">
-            <div id="Main" class="w3-container">
-                <p>Please Pick a Topic.</p>
-            </div>
+      <script>
 
-            <div id="Wedding Booking" class="w3-container" style="display:none">
-                <div class="first-part"></div>
-                <h2>Wedding</h2>
-            </div>
-
-            
-            <div id="Party Booking" class="w3-container" style="display:none">
-                <div class="first-part"></div>
-                <h2>Party</h2>
-            </div>
-
-            <div id="Restaurant Booking" class="w3-container" style="display:none">
-                <div class="first-part"></div>
-            <h2>Restaurant Tables</h2>
-            </div>
-    </div>  
-    
-      
-    <script>
-      function openType(cityName) {
-        var i;
-        var x = document.getElementsByClassName("type");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
+        function menuIcon() {
+            let x = document.getElementById("menu");
+            if(x.class === "menuBar") {
+                x.class += "  responsive";
+            } else {
+                x.className = "menuBar";
+            }
         }
-        document.getElementById(cityName).style.display = "block";  
-      }
     </script>
+
+    
 </div>
 </body>
 </html>
