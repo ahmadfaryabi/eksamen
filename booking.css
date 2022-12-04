@@ -8,11 +8,12 @@
     background-color: rgb(230, 230, 230);    
     line-height: 1.618em;
     color: rgb(95, 69, 60) ;
+    margin:0px;
   }
   .booking{
     display: block;
     align-items: center;
-    height: 50rem;
+    height: 40rem;
     margin: auto;
     z-index: 1;
   }
@@ -226,7 +227,7 @@
   }
 
 
-@media screen and (max-width: 620px){
+@media screen and (max-width: 730px){
     .tab-content{
         margin-top: 50px;
         display: block;
@@ -257,7 +258,7 @@
 
 .container-footer{
     max-width:1170px;
-    margin: auto;
+    margin: 0;
 }
 .footer .row{
     max-width: 1170px;
@@ -374,6 +375,9 @@
     }
     .footer-col .social-links{
         max-width: 100%;
+    }
+    .footer iframe{
+        width: 100%;
     }
 }
 @media(max-width: 574px){

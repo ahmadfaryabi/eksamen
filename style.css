@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bree+Serif&family=Outfit:wght@600&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu+Condensed&family=Ubuntu:wght@700&display=swap');
 body {
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(239, 239, 239);
     margin:0px;
     user-select: none;
+    /* display: list-item; */
 }
 
 .menuBar {
@@ -16,6 +17,12 @@ body {
     width: 100%;
 }
 
+.a {
+    margin: 10rem;
+}
+.b {
+    margin: 10rem;
+}
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
     color: rgb(145, 184, 208);
@@ -111,51 +118,6 @@ body {
     color: #4074b5;
 }
 
-/*Booking Page*/
-#logo{
-    font-family: 'Audiowide', cursive;
-    color: rgb(17, 17, 17);
-    padding: 20px 20px;
-    text-decoration: none;
-    font-size: 40px;
-    text-align: center;
-    margin: 0;
-}
-.first-part{
-    margin: auto;
-    height: 500px;
-    width: 500px;
-    background-image: url(Images/Footer-background.jpg);
-}
-
-.booking{
-    color: #000000; 
-}
-.w3{
-    max-width: 1000px;
-    margin: auto;
-}
-.w3-container{
-    border: 1px solid black;
-}
-#bookingButton{
-    font-size: 20px;
-    padding: 20px ;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border-radius: 10px 10px 0 0 ;
-}
-#bookingButton:hover{
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-.wedding.Booking h2{
-    width: 50%;
-    
-    background-color: #7d7d7d;
-}
-
 .background.wedding{
     background-image: url(Images/wedding.jpg);
 }
@@ -167,8 +129,13 @@ body {
 .background.cafe{
     background-image: url(Images/cafe.jpg);
 }
+<<<<<<< HEAD
 .background.data1100 {
     background-image: url("Images/data1100.jpeg");
+=======
+.background.gaming{
+    background-image: url(Images/gaming.jpg);
+>>>>>>> b90de8ec8e7dee4702f78ad05cb83d5dd3f256b8
 }
 .backgroundImage-text{
     margin: auto;
@@ -187,6 +154,10 @@ body {
 }
 .backgroundImage-text.cafe{
     background: rgb(141, 72, 51);
+    color: rgb(255, 255, 255);
+}
+.backgroundImage-text.gaming{
+    background: rgb(15, 80, 0);
     color: rgb(255, 255, 255);
 }
 
@@ -209,6 +180,17 @@ body {
     font-family: 'Bree Serif', serif;
     font-size: 50px;
 }
+.textImage{
+    width: 350px;
+}
+.textImage.right{
+    float: right;
+    padding: 0 0 10px 25px;
+}
+.textImage.left{
+    float:left;
+    padding: 0 25px 10px 0;
+}
 #TextImage1{
     width: 40.6%;
     position:flex;
@@ -229,9 +211,23 @@ body {
 #TextImage4{
     position:flex;
     float:right;
-    width: 28%;
-    padding-right: 5%;
-    margin-top:-1% ;
+    width: 50%;
+    margin-top:5%;
+    /* padding-right: 1%; */
+    /* position: relative; */
+    margin-left: 1rem;
+}
+
+#TextImage5{
+    position:flex;
+    /* position: relative; */
+    float:left;
+    width: 50%;
+    /* margin-top:5%; */
+    /* padding-left: 1%; */
+    height: 25rem;
+    margin-right: 1rem;
+    /* margin-bottom: 5rem; */
 }
 
 
@@ -266,7 +262,7 @@ blockquote p:after {
         display: flex;
         flex-direction: row-reverse;
         font-family:Georgia, "Times New Roman", Times, serif;
-        margin-bottom:50px;  
+        margin-bottom:-100px;  
 }
 
 .quotes{
@@ -275,22 +271,28 @@ blockquote p:after {
 
 .Tittle{
     display: block;
-    font-family: 'Poppins', sans-serif; 
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-family: 'Poppins', sans-serif;
+    /* margin-block-start: 1em; */
+    /* margin-inline-start: 0px; */
+    /* margin-inline-end: 0px; */
     text-align:center;
-    line-height: 1.8;
+    line-height: 1.6;
     color:rgba(6,158,190,10);
     font-size: 3vw;
-
+    /* margin-top: 5rem; */
 }
 
 .a ul{
     list-style: none;
-    padding-right:45% ;
+    padding-right:55% ;
     text-align:center;
+}
+
+.b ul{
+    list-style: none;
+    margin-right:2%;
+    text-align:center;
+    padding-left: 2%;
 }
 
 .section{
@@ -316,13 +318,15 @@ blockquote p:after {
 
 .paragraph{
     display: block;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align:justify;
     line-height: 1.8;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .header{
@@ -363,8 +367,8 @@ blockquote p:after {
 }
 .menuCard{
     display: flex;
-    flex-wrap: wrap;
-    width: 22%;   
+    flex-wrap: wrap;  
+    width: 22%; 
     border: 1px dashed black;
     border-radius: 15px;
     background: white;
@@ -377,7 +381,7 @@ blockquote p:after {
     transform: scale(1.01);
 }
 .card-image img{   
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0 ;
     width: 100%;
     align-items: center;
 }
@@ -392,11 +396,43 @@ blockquote p:after {
     font-size: .9rem; 
 
 }
+.card-content h3{
+    border: 1px dashed black;
+    width: 50%;
+    margin: 0 auto 10px auto;
+    background-color: rgb(104, 53, 38);
+    color: white;
+    border-radius: 10px;
+}
 .product{
     color: white;
     background-color: rgb(104, 53, 38);
     border-radius: 10px;
 
+}
+/*Gaming*/
+.menuCard-Gaming{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 22%; 
+    border: 1px dashed black;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.2);  
+    margin: 10px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(63, 104, 38, 0.5) 100%);
+    transition: 0.5s;
+}
+.menuCard-Gaming:hover{
+    transform: scale(1.01);
+}
+.card-content.Gaming h3{
+    border: 1px dashed black;
+    width: 50%;
+    margin: 0 auto 10px auto;
+    background-color: rgb(45, 104, 38);
+    color: white;
+    border-radius: 10px;
 }
 .card{
     box-sizing: border-box;
@@ -547,7 +583,7 @@ blockquote p:after {
     .header{
         font-size: 28px;
     }
-    .menuCard{
+    .menuCard, .menuCard-Gaming{
         width: 43%;
         height: 16.5%;
     }
@@ -555,7 +591,7 @@ blockquote p:after {
         width: 100%;
         border: none;
     }
-    .card-content{
+    .card-content , .card-content.Gaming{
         font-size: 12px;
     }
     .background-welcomeText p{
@@ -574,6 +610,16 @@ blockquote p:after {
 @media screen and (max-width: 1217px){
     .Container{
         max-width: 620px;
+    }
+}
+@media screen and (max-width: 364px){
+    .product{
+        font-size: 12px;
+    }
+    
+    .menuCard, .menuCard-Gaming{
+        width: 40%;
+        height: 16.5%;
     }
 }
 
