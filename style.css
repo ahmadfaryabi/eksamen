@@ -340,6 +340,14 @@ blockquote p:after {
     font-size: .9rem; 
 
 }
+.card-content h3{
+    border: 1px dashed black;
+    width: 50%;
+    margin: 0 auto 10px auto;
+    background-color: rgb(104, 53, 38);
+    color: white;
+    border-radius: 10px;
+}
 .product{
     color: white;
     background-color: rgb(104, 53, 38);
