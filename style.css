@@ -122,7 +122,7 @@ body {
     background-image: url(Images/wedding.jpg);
 }
 
-.background.party{
+.background.meeting{
     background-image: url(Images/meetings.jpg);
 }
 
@@ -144,7 +144,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.backgroundImage-text.party{
+.backgroundImage-text.meeting{
     background: rgb(28, 27, 28);
     color: rgb(255, 255, 255);
 }
@@ -441,7 +441,7 @@ blockquote p:after {
 #Restaurant{
     background: url(Images/card-background2.jpg)center / cover;
 }
-#Party{
+#Meeting{
     background: url(Images/card-background3.jpg)center / cover;
 }
 #Gaming{
