@@ -683,7 +683,10 @@ p.tit2{
 }
 
 @media screen and (max-width: 670px){
-    
+    .textImage{   
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
     iframe{
         width: 100%;
     }
@@ -759,12 +762,6 @@ p.tit2{
 @media screen and (max-width: 900px){
     .quotes{
         font-size: 20px;
-    }
-}
-@media  screen and (max-width: 974px){
-    .textImage{   
-        width: 100%;
-        margin: 10px 0 10px 0;
     }
 }
 
