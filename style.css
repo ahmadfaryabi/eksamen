@@ -16,7 +16,7 @@ body {
     background-color: rgb(0, 39, 55);
     overflow: hidden;
     top: 0;
-    position: fixed; 
+    position: sticky; 
     z-index: 2;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
     width: 100%;
@@ -673,10 +673,7 @@ p.tit2{
 }
 
 @media screen and (max-width: 670px){
-    .textImage{   
-        width: 100%;
-        margin: 10px 0 10px 0;
-    }
+    
     iframe{
         width: 100%;
     }
@@ -755,6 +752,13 @@ p.tit2{
         font-size: 20px;
     }
 }
+@media  screen and (max-width: 974px){
+    .textImage{   
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+}
+
 
 
 /*footer*/
