@@ -32,10 +32,12 @@ body {
 }
 
 .a {
-    margin: 10rem;
+    margin: auto;
+    padding: 20px;
 }
 .b {
-    margin: 10rem;
+    margin: auto;
+    padding: 20px;
 }
 .menuBar .logo{
     font-family: 'Audiowide', cursive;
@@ -266,7 +268,7 @@ body {
 #TextImage4{
     position:flex;
     float:right;
-    width: 50%;
+    width: 100%;
     margin-top:5%;
     /* padding-right: 1%; */
     /* position: relative; */
@@ -277,10 +279,9 @@ body {
     position:flex;
     /* position: relative; */
     float:left;
-    width: 50%;
+    width: 100%;
     /* margin-top:5%; */
     /* padding-left: 1%; */
-    height: 25rem;
     margin-right: 1rem;
     /* margin-bottom: 5rem; */
 }
@@ -381,13 +382,13 @@ blockquote p:after {
 li.tit{
     list-style-type: "✓";
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 li.tit2{
     list-style-type: "✓";
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
@@ -733,19 +734,25 @@ p.tit2{
     }
 }
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 800px){
     #TextImage4, #TextImage5{
         width: 100%;
-    }  
+    }
 }
 
 
-@media screen and (max-width: 670px){
+@media screen and (max-width: 900px){
     .section, .section2{
         width: 100%;
     }
     .section img, .section2 img{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .quotes{
+        font-size: 20px;
     }
 }
 
