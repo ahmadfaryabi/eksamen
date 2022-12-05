@@ -137,12 +137,6 @@ body {
 /*link: https://www.smartcitiesworld.net/opinions/opinions/the-14-pillars-of-a-smart-city*/
 .background.data1100 {
     background-image: url("Images/data1100_bcg.jpeg");
-<<<<<<< HEAD
-}
-.background.data1100 {
-    background-image: url(Images/data1100.jpeg);
-=======
->>>>>>> ccde9c72827c139fcd76bd60cf08334ff9f9e4eb
 }
 .background.gaming{
     background-image: url(Images/gaming.jpg);
