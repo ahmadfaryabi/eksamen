@@ -228,6 +228,7 @@ body {
     padding: 5px 20px;
     margin: 20px;
     line-height: 180%;
+    box-sizing: border-box;
     border-radius: 15px;
     max-width: 500px;
     color: rgb(81, 81, 81);
@@ -352,6 +353,10 @@ blockquote p:after {
     justify-content: space-between;
     padding: 40px;
     margin-left: 40%;
+}
+
+.section .text, .section2 .text {
+    margin: auto;
 }
 
 .section img{
@@ -741,9 +746,8 @@ p.tit2{
 @media screen and (max-width: 900px){
     .section, .section2{
         width: 100%;
-    }
-    .section img, .section2 img{
-        width: 100%;
+        margin:2px auto;
+        box-sizing: border-box;
     }
 }
 
