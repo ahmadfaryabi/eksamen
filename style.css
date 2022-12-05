@@ -394,6 +394,7 @@ li.tit2{
 p.tit{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    margin:auto;
 }
 
 p.tit2{
@@ -727,7 +728,27 @@ p.tit2{
     .background.gaming{
         background-image: url(Images/gaming2.jpg);
     } 
+    .background.wedding{
+        background-image: url(Images/wedding.jpg);
+    }
 }
+
+@media screen and (max-width: 670px){
+    #TextImage4, #TextImage5{
+        width: 100%;
+    }  
+}
+
+
+@media screen and (max-width: 670px){
+    .section, .section2{
+        width: 100%;
+    }
+    .section img, .section2 img{
+        width: 100%;
+    }
+}
+
 
 /*footer*/
 
