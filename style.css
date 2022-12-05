@@ -138,6 +138,9 @@ body {
 .background.data1100 {
     background-image: url("Images/data1100_bcg.jpeg");
 }
+.background.data1100 {
+    background-image: url(Images/data1100.jpeg);
+}
 .background.gaming{
     background-image: url(Images/gaming.jpg);
 }
