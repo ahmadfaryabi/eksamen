@@ -382,6 +382,7 @@ li.tit2{
 p.tit{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    margin:auto;
 }
 
 p.tit2{
@@ -725,6 +726,8 @@ p.tit2{
         width: 100%;
     }  
 }
+
+
 @media screen and (max-width: 670px){
     .section, .section2{
         width: 100%;
